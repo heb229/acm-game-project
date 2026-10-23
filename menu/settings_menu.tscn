@@ -1,0 +1,164 @@
+[gd_scene format=4 uid="uid://b6g4h1bigbhuo"]
+
+[ext_resource type="Script" uid="uid://ctk8u3lb7f12p" path="res://menu/settings_menu.gd" id="1_gqi7j"]
+[ext_resource type="Texture2D" uid="uid://d1t5skv30nn25" path="res://menu/assets/background.png" id="1_s3c1e"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gqi7j"]
+texture = ExtResource("1_s3c1e")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_ctk4e"]
+sources/0 = SubResource("TileSetAtlasSource_gqi7j")
+
+[node name="SettingsMenu" type="CanvasLayer" unique_id=82980572]
+script = ExtResource("1_gqi7j")
+title_scene_path = "uid://d2vqbfb7fs648"
+
+[node name="ParallaxBackground" type="Parallax2D" parent="." unique_id=127639790]
+repeat_size = Vector2(1280, 768)
+autoscroll = Vector2(10, 5)
+repeat_times = 3
+
+[node name="TileMapLayer" type="TileMapLayer" parent="ParallaxBackground" unique_id=1504446053]
+scale = Vector2(4, 4)
+tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAEAAAABAAAAAAABAAAAAAABAAEAAAABAAEAAAACAAAAAAAAAAAAAAACAAEAAAAAAAEAAAADAAAAAAABAAAAAAADAAEAAAABAAEAAAAEAAAAAAAAAAAAAAAEAAEAAAAAAAEAAAAFAAAAAAABAAAAAAAFAAEAAAABAAEAAAAGAAAAAAAAAAAAAAAGAAEAAAAAAAEAAAAHAAAAAAABAAAAAAAHAAEAAAABAAEAAAAIAAAAAAAAAAAAAAAIAAEAAAAAAAEAAAAJAAAAAAABAAAAAAAJAAEAAAABAAEAAAAKAAAAAAAAAAAAAAAKAAEAAAAAAAEAAAALAAAAAAABAAAAAAALAAEAAAABAAEAAAAMAAAAAAAAAAAAAAAMAAEAAAAAAAEAAAANAAAAAAABAAAAAAANAAEAAAABAAEAAAAMAAIAAAAAAAAAAAAMAAMAAAAAAAEAAAANAAIAAAABAAAAAAANAAMAAAABAAEAAAAKAAIAAAAAAAAAAAAKAAMAAAAAAAEAAAALAAIAAAABAAAAAAALAAMAAAABAAEAAAAIAAIAAAAAAAAAAAAIAAMAAAAAAAEAAAAJAAIAAAABAAAAAAAJAAMAAAABAAEAAAAGAAIAAAAAAAAAAAAGAAMAAAAAAAEAAAAHAAIAAAABAAAAAAAHAAMAAAABAAEAAAAEAAIAAAAAAAAAAAAEAAMAAAAAAAEAAAAFAAIAAAABAAAAAAAFAAMAAAABAAEAAAACAAIAAAAAAAAAAAACAAMAAAAAAAEAAAADAAIAAAABAAAAAAADAAMAAAABAAEAAAAAAAIAAAAAAAAAAAAAAAMAAAAAAAEAAAABAAIAAAABAAAAAAABAAMAAAABAAEAAAAAAAQAAAAAAAAAAAAAAAUAAAAAAAEAAAABAAQAAAABAAAAAAABAAUAAAABAAEAAAACAAQAAAAAAAAAAAACAAUAAAAAAAEAAAADAAQAAAABAAAAAAADAAUAAAABAAEAAAAEAAQAAAAAAAAAAAAEAAUAAAAAAAEAAAAFAAQAAAABAAAAAAAFAAUAAAABAAEAAAAGAAQAAAAAAAAAAAAGAAUAAAAAAAEAAAAHAAQAAAABAAAAAAAHAAUAAAABAAEAAAAIAAQAAAAAAAAAAAAIAAUAAAAAAAEAAAAJAAQAAAABAAAAAAAJAAUAAAABAAEAAAAKAAQAAAAAAAAAAAAKAAUAAAAAAAEAAAALAAQAAAABAAAAAAALAAUAAAABAAEAAAAMAAQAAAAAAAAAAAAMAAUAAAAAAAEAAAANAAQAAAABAAAAAAANAAUAAAABAAEAAAAMAAYAAAAAAAAAAAAMAAcAAAAAAAEAAAANAAYAAAABAAAAAAANAAcAAAABAAEAAAAKAAYAAAAAAAAAAAAKAAcAAAAAAAEAAAALAAYAAAABAAAAAAALAAcAAAABAAEAAAAIAAYAAAAAAAAAAAAIAAcAAAAAAAEAAAAJAAYAAAABAAAAAAAJAAcAAAABAAEAAAAGAAYAAAAAAAAAAAAGAAcAAAAAAAEAAAAHAAYAAAABAAAAAAAHAAcAAAABAAEAAAAEAAYAAAAAAAAAAAAEAAcAAAAAAAEAAAAFAAYAAAABAAAAAAAFAAcAAAABAAEAAAACAAYAAAAAAAAAAAACAAcAAAAAAAEAAAADAAYAAAABAAAAAAADAAcAAAABAAEAAAAAAAYAAAAAAAAAAAAAAAcAAAAAAAEAAAABAAYAAAABAAAAAAABAAcAAAABAAEAAAAOAAAAAAAAAAAAAAAOAAEAAAAAAAEAAAAOAAIAAAAAAAAAAAAOAAMAAAAAAAEAAAAOAAQAAAAAAAAAAAAOAAUAAAAAAAEAAAAOAAYAAAAAAAAAAAAOAAcAAAAAAAEAAAAPAAAAAAABAAAAAAAPAAEAAAABAAEAAAAPAAIAAAABAAAAAAAPAAMAAAABAAEAAAAPAAQAAAABAAAAAAAPAAUAAAABAAEAAAAPAAYAAAABAAAAAAAPAAcAAAABAAEAAAAQAAAAAAAAAAAAAAAQAAEAAAAAAAEAAAAQAAIAAAAAAAAAAAAQAAMAAAAAAAEAAAAQAAQAAAAAAAAAAAAQAAUAAAAAAAEAAAAQAAYAAAAAAAAAAAAQAAcAAAAAAAEAAAARAAAAAAABAAAAAAARAAEAAAABAAEAAAARAAIAAAABAAAAAAARAAMAAAABAAEAAAARAAQAAAABAAAAAAARAAUAAAABAAEAAAARAAYAAAABAAAAAAARAAcAAAABAAEAAAASAAAAAAAAAAAAAAASAAEAAAAAAAEAAAASAAIAAAAAAAAAAAASAAMAAAAAAAEAAAASAAQAAAAAAAAAAAASAAUAAAAAAAEAAAASAAYAAAAAAAAAAAASAAcAAAAAAAEAAAATAAAAAAABAAAAAAATAAEAAAABAAEAAAATAAIAAAABAAAAAAATAAMAAAABAAEAAAATAAQAAAABAAAAAAATAAUAAAABAAEAAAATAAYAAAABAAAAAAATAAcAAAABAAEAAAAAAAgAAAAAAAAAAAAAAAkAAAAAAAEAAAABAAgAAAABAAAAAAABAAkAAAABAAEAAAACAAgAAAAAAAAAAAACAAkAAAAAAAEAAAADAAgAAAABAAAAAAADAAkAAAABAAEAAAAEAAgAAAAAAAAAAAAEAAkAAAAAAAEAAAAFAAgAAAABAAAAAAAFAAkAAAABAAEAAAAGAAgAAAAAAAAAAAAGAAkAAAAAAAEAAAAHAAgAAAABAAAAAAAHAAkAAAABAAEAAAAIAAgAAAAAAAAAAAAIAAkAAAAAAAEAAAAJAAgAAAABAAAAAAAJAAkAAAABAAEAAAAKAAgAAAAAAAAAAAAKAAkAAAAAAAEAAAALAAgAAAABAAAAAAALAAkAAAABAAEAAAAMAAgAAAAAAAAAAAAMAAkAAAAAAAEAAAANAAgAAAABAAAAAAANAAkAAAABAAEAAAAOAAgAAAAAAAAAAAAOAAkAAAAAAAEAAAAPAAgAAAABAAAAAAAPAAkAAAABAAEAAAAQAAgAAAAAAAAAAAAQAAkAAAAAAAEAAAARAAgAAAABAAAAAAARAAkAAAABAAEAAAASAAgAAAAAAAAAAAASAAkAAAAAAAEAAAATAAgAAAABAAAAAAATAAkAAAABAAEAAAAAAAoAAAAAAAAAAAABAAoAAAABAAAAAAACAAoAAAAAAAAAAAADAAoAAAABAAAAAAAEAAoAAAAAAAAAAAAFAAoAAAABAAAAAAAGAAoAAAAAAAAAAAAHAAoAAAABAAAAAAAIAAoAAAAAAAAAAAAJAAoAAAABAAAAAAAKAAoAAAAAAAAAAAALAAoAAAABAAAAAAAMAAoAAAAAAAAAAAANAAoAAAABAAAAAAAOAAoAAAAAAAAAAAAPAAoAAAABAAAAAAAQAAoAAAAAAAAAAAARAAoAAAABAAAAAAASAAoAAAAAAAAAAAATAAoAAAABAAAAAAAAAAsAAAAAAAEAAAABAAsAAAABAAEAAAACAAsAAAAAAAEAAAADAAsAAAABAAEAAAAEAAsAAAAAAAEAAAAFAAsAAAABAAEAAAAGAAsAAAAAAAEAAAAHAAsAAAABAAEAAAAIAAsAAAAAAAEAAAAJAAsAAAABAAEAAAAKAAsAAAAAAAEAAAALAAsAAAABAAEAAAAMAAsAAAAAAAEAAAANAAsAAAABAAEAAAAOAAsAAAAAAAEAAAAPAAsAAAABAAEAAAAQAAsAAAAAAAEAAAARAAsAAAABAAEAAAASAAsAAAAAAAEAAAATAAsAAAABAAEAAAA=")
+tile_set = SubResource("TileSet_ctk4e")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1810847783]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 120.0
+grow_horizontal = 2
+
+[node name="SubtitleLabel" type="RichTextLabel" parent="HBoxContainer" unique_id=953367775]
+custom_minimum_size = Vector2(320, 120)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/normal_font_size = 48
+bbcode_enabled = true
+text = "Settings"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Spacer_2" type="Control" parent="HBoxContainer" unique_id=488593955]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SaveButton" type="Button" parent="HBoxContainer" unique_id=1523747733]
+custom_minimum_size = Vector2(240, 80)
+custom_maximum_size = Vector2(-1, 80)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 32
+text = "Save "
+
+[node name="BackButton" type="Button" parent="HBoxContainer" unique_id=1525930599]
+custom_minimum_size = Vector2(240, 80)
+custom_maximum_size = Vector2(-1, 80)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 32
+text = "< Back"
+
+[node name="Spacer" type="Control" parent="HBoxContainer" unique_id=1379217668]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1378029219]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 50.0
+offset_top = 125.0
+offset_right = -50.0
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0)
+
+[node name="TabContainer" type="TabContainer" parent="ColorRect" unique_id=1659967634]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+current_tab = 1
+
+[node name="Audio" type="Control" parent="ColorRect/TabContainer" unique_id=743910064]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="SettingsContainer" type="VBoxContainer" parent="ColorRect/TabContainer/Audio" unique_id=1214459431]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 25.0
+offset_top = 25.0
+offset_right = -25.0
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MasterVolumeControl" type="HBoxContainer" parent="ColorRect/TabContainer/Audio/SettingsContainer" unique_id=1980214461]
+layout_mode = 2
+
+[node name="MasterVolumeLabel" type="Label" parent="ColorRect/TabContainer/Audio/SettingsContainer/MasterVolumeControl" unique_id=300426233]
+layout_mode = 2
+text = "Master Volume"
+
+[node name="MasterVolumeSlider" type="HSlider" parent="ColorRect/TabContainer/Audio/SettingsContainer/MasterVolumeControl" unique_id=1317755584]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+
+[node name="MasterVolumeLevelLabel" type="Label" parent="ColorRect/TabContainer/Audio/SettingsContainer/MasterVolumeControl" unique_id=1095916695]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+text = "0"
+
+[node name="Video" type="Control" parent="ColorRect/TabContainer" unique_id=866049387]
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="SettingsContainer" type="VBoxContainer" parent="ColorRect/TabContainer/Video" unique_id=51981399]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 25.0
+offset_top = 25.0
+offset_right = -25.0
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="FullscreenContainer" type="HBoxContainer" parent="ColorRect/TabContainer/Video/SettingsContainer" unique_id=1398277437]
+layout_mode = 2
+
+[node name="FullscreenLabel" type="Label" parent="ColorRect/TabContainer/Video/SettingsContainer/FullscreenContainer" unique_id=1319430950]
+layout_mode = 2
+text = "Fullscreen"
+
+[node name="FullscreenCheckBox" type="CheckBox" parent="ColorRect/TabContainer/Video/SettingsContainer/FullscreenContainer" unique_id=99276340]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Input" type="Control" parent="ColorRect/TabContainer" unique_id=1452353004]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
+
+[connection signal="pressed" from="HBoxContainer/SaveButton" to="." method="_on_save_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="value_changed" from="ColorRect/TabContainer/Audio/SettingsContainer/MasterVolumeControl/MasterVolumeSlider" to="." method="_on_master_volume_slider_value_changed"]
+[connection signal="toggled" from="ColorRect/TabContainer/Video/SettingsContainer/FullscreenContainer/FullscreenCheckBox" to="." method="_on_fullscreen_check_box_toggled"]
