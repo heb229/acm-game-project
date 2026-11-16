@@ -16,6 +16,7 @@ sources/0 = SubResource("TileSetAtlasSource_ckp2h")
 [node name="TitleScreen" type="CanvasLayer" unique_id=1036245589]
 script = ExtResource("1_ckp2h")
 level_select_path = "uid://dx2t82s0qg2fd"
+settings_path = "uid://b6g4h1bigbhuo"
 
 [node name="ParallaxBackground" type="Parallax2D" parent="." unique_id=1174642531]
 repeat_size = Vector2(1280, 768)
@@ -70,4 +71,4 @@ vertical_alignment = 1
 
 [connection signal="pressed" from="ButtonsContainer/PlayButton" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="ButtonsContainer/SettingsButton" to="." method="_on_settings_button_pressed"]
-[connection signal="pressed" from="ButtonsContainer/QuitBotton" to="." method="_on_quit_botton_pressed"]
+[connection signal="pressed" from="ButtonsContainer/QuitBotton" to="." method="_on_quit_button_pressed"]
